@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+    <!--FontAwesome File-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     <link rel="stylesheet" href="vendors/css/progresscircle.css">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/uikit.min.css">
+    <!--Resources File-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <title>Restaurant Template</title>
+</head>
+<body>
+    <!--START HEADER SECTION-->
+
+    <header id="home" class="scrolly">
+            <nav uk-sticky="top: 400; bottom: #animation top: 200; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+                <div class="row">
+                    <a href="#">
+                        <img src="resources/img/logo.png" alt="logo" class="logo">
+                    </a>
+                    <ul class="main-nav">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#package">package</a></li>
+                        <li><a href="#statistics">statistic</a></li>
+                        <li><a href="#stuff">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                    
+                    <div class="mobile-menu">
+                        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+                        <div id="myNab" class="overly">
+                            <a href="#" onclick="closeNav()"><i class="far fa-times-circle"></i></a>
+                            <div class="overlay-content">
+                                <a onclick="closeNav()" href="#home">Home</a>
+                                <a onclick="closeNav()" href="#package">package</a>
+                                <a onclick="closeNav()" href="#statistics">statistics</a>
+                                <a onclick="closeNav()" href="#stuff">about</a>
+                                 <a onclick="closeNav()" href="#contact">contact</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col span_1_of_2">
+                    <div class="hero-text-box" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                        <h1>Get Cashback <br>
+                            up to <span> 50%</span></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur justo eu nunc consequat.</p>
+                            <a href="#package" class="btn btn-hero">order now</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+     <!--END HEADER SECTION-->
+
+      <!--START STUFF SECTION-->
+    <section class="stuff-section scrolly" id="stuff">
+        <div class="row">
+            <h2>Our Chef</h2>
+            <p class="little-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3 stuff-box">
+                <img src="resources/img/chef1.jpg" alt="aiden" class="stuff-img">
+                <h3>Aiden Hunter</h3>
+                <span>founder</span>
+
+            </div>
+            <div class="col span_1_of_3 stuff-box">
+                <img src="resources/img/chef2.jpg" alt="Ethel" class="stuff-img">
+                <h3>Ethel Ramsey</h3>
+                <span>co-Founder</span>
+            </div>
+            <div class="col span_1_of_3 stuff-box">
+                <img src="resources/img/chef3.jpg" alt="Fannie" class="stuff-img">
+                <h3>Fannie Stewart</h3>
+                <span>co-Founder</span>
+            </div>
+        </div>
+        <div class="icon">
+            <img src="resources/img/vector1.png" alt="vec01" class="vec01">
+            <img src="resources/img/vector2.png" alt="vec02" class="vec02">
+            <img src="resources/img/vector3.png" alt="vec03" class="vec03">
+            <img src="resources/img/vector5.png" alt="vec05" class="vec05">
+            <img src="resources/img/vector6.png" alt="vec06" class="vec06">
+        </div>
+    </section>
+
+       <!--END STUFF SECTION-->
+
+       <!--START BEST GURGER SECTION-->
+
+       <section class="best-burger scrolly" id=bestBurger>
+           <div class="row">
+               <div class="col span_1_of_2" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <img src="resources/img/burger1.jpg" alt="best-B" class="bestBurger1">
+               </div>
+               <div class="col span_1_of_2 position" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <h2>Best Burger</h2>
+                    <p class="little-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                    </p>
+                    <a href="#" class="btn btn-hero">order now</a>>
+                </div>
+           </div>
+       </section>
+
+       <!--END BEST GURGER SECTION-->
+
+        <!--START BIG GURGER SECTION-->
+
+     <section class="big-bergur scrolly" id="bigBurger">
+         <div class="row">
+            <div class="col span_1_of_2 position"   uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <h2>big Burger</h2>
+                <p class="little-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                </p>
+                <a href="#" class="btn btn-hero">order now</a>
+            </div>
+            <div class="col span_1_of_2">
+                <img src="resources/img/burger2.jpg" alt="big-B" class="bigBurger1">
+           </div>
+         </div>
+         <div class="icon">
+            <img src="resources/img/vector1.png" alt="vec01" class="vec01">
+            <img src="resources/img/vector2.png" alt="vec02" class="vec02">
+            <img src="resources/img/vector3.png" alt="vec03" class="vec03">
+            <img src="resources/img/vector5.png" alt="vec05" class="vec05">
+            <img src="resources/img/vector6.png" alt="vec06" class="vec06">
+            <img src="resources/img/vector7.png" alt="vec07" class="vec07">
+        </div>
+
+     </section>
+
+     <!--END BIG GURGER SECTION-->
+
+     <!--START STATISTICS SECTION-->
+
+        <section class="statistic-section scrolly" id="statistics"> 
+                <div class="row">
+                    <h2>statistics</h2>
+                    <p class="little-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="content">
+                        <div class="col span_1_of_3">
+                            <div class="items">
+                                <div class="icon">
+                                    <i class="fa fa-history"></i>
+                                </div>
+                                <div><span class="counter">50</span></div>
+                                <span class="text">country</span>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_3">
+                            <div class="items">
+                                <div class="icon">
+                                    <i class="fa fa-gift"></i>
+                                </div>
+                                <div><span class="counter">700</span></div>
+                                <span class="text">Outlates</span>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_3">
+                            <div class="items">
+                                <div class="icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div><span class="counter">1200</span></div>
+                                <span class="text">Clients</span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>    
+        </section>
+
+     <!--END STATISTICS SECTION-->
+
+
+      <!--START PACKAGE SECTION-->
+        <section class="package-section scrolly" id="package">
+            <div class="row">
+                <h2>Popular Package</h2>  
+            </div>
+            <!--popular package start-->
+                <div class="row">
+                        <div class="content">
+                            <div class="col span_1_of_3 card-container">
+                                <div class="card">
+                                        <h3>package one</h3>
+                                        <img src="resources/img/package-icon.png" alt="package-icon" class="burger-icon">
+                                        <h4>$10</h4>
+                                        <a href="#" class="btn btn-hero">order now</a>  
+                                </div>
+                            </div> 
+                            <div class="col span_1_of_3 card-container">
+                                <div class="card">
+                                        <h3>package two</h3>
+                                        <img src="resources/img/package-icon.png" alt="package-icon" class="burger-icon">
+                                        <h4>$20</h4>
+                                        <a href="#" class="btn btn-hero">order now</a>  
+                                </div>
+                            </div> 
+                            <div class="col span_1_of_3 card-container">
+                                    <div class="card">
+                                            <h3>package three</h3>
+                                            <img src="resources/img/package-icon.png" alt="package-icon" class="burger-icon">
+                                            <h4>$30</h4>
+                                            <a href="#" class="btn btn-hero">order now</a>
+                                    </div>
+                         </div> 
+                        </div>            
+                </div>
+            <!--poplar package end-->
+                <div class="icon">
+                    <img src="resources/img/vector1.png" alt="vec01" class="vec01">
+                    <img src="resources/img/vector2.png" alt="vec02" class="vec02">
+                    <img src="resources/img/vector3.png" alt="vec03" class="vec03">
+                    <img src="resources/img/vector5.png" alt="vec05" class="vec05">
+                    <img src="resources/img/vector6.png" alt="vec06" class="vec06">
+                    <img src="resources/img/vector7.png" alt="vec07" class="vec07">
+                </div>
+        </section>
+      <!--END PACKAGE SECTION-->
+
+        <!--START BARRY HENDERSON SECTION-->
+            <section class="barry-section scrolly" id="barryH">
+                <div class="row">
+                    <div class="container">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </h2>
+                        <h3>Barry Henderson</h3> 
+                    </div>
+                </div>    
+            </section>
+        <!--END BARRY HENDERSON SECTION-->
+
+        <!--START CONTACT SECTION-->
+        <section class="contact-section scrolly" id="contact">
+            <div class="row">
+                <div>
+                    <h2>Don’t miss Our Update</h2>
+                    <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur justo eu nunc consequat.</p>
+                </div>
+            </div>
+             <div class="row">
+                 <form action="#" method="post">
+                     <div class="row">
+                         
+                            <div>
+                                <input type="text" placeholder="Your Mail*" required name="Name" class="text-field">
+                                <input type="submit" value="SUBSCRIBE" class="btn btn-submit">
+                            </div>     
+                    </div>
+                 </form>
+             </div>
+             <div class="icon">
+                <img src="resources/img/vector1.png" alt="vec01" class="vec01">
+                <img src="resources/img/vector2.png" alt="vec02" class="vec02">
+                <img src="resources/img/vector3.png" alt="vec03" class="vec03">
+                <img src="resources/img/vector5.png" alt="vec05" class="vec05">
+                <img src="resources/img/vector6.png" alt="vec06" class="vec06">
+                <img src="resources/img/vector7.png" alt="vec07" class="vec07">
+            </div>
+        </section>
+
+        <!--END CONTACT SECTION-->
+
+         <!--START FOOTER SECTION-->
+         <footer class="footer-section scrolly">
+             <div class="row">
+                <div class="col span_2_of_4 re-edit">
+                    <h4>Title Here</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. </p>
+                    <div class="social-link">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-envelope-open-text"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span_1_of_4 none ">
+                    <h4>Title Here</h4>                 
+                    <div class="about footer-box">
+                        <ul class="box">
+                            <li>
+                                <a href="#">history</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Brand Guidelines</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span_1_of_4 none">
+                    <h4>Title Here</h4>                  
+                    <div class="services footer-box">
+                        <ul class="box">
+                            <li>
+                                <a href="#">How to Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Product</a>
+                            </li>
+                            <li>
+                                <a href="#">Order Status</a>
+                            </li>
+                            <li>
+                                <a href="#">Promo</a>
+                            </li>
+                            <li>
+                                <a href="#">Payment Method</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col span_1_of_4 none">
+                    <h4>Title Here</h4>                 
+                    <div class="other footer-box">
+                        <ul class="box">
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Help</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>                         
+                        </ul>
+                    </div>
+
+                </div>
+             </div>
+             <div class="totop">
+                <a href="#" uk-totop uk-scroll></a>
+            </div>
+         </footer>
+          <!--END FOOTER SECTION-->
+
+    <!--JS File-->
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+    <script src="vendors/js/selectivizr.js"></script>
+    <script src="vendors/js/mixitup.min.js"></script>
+    <script src="vendors/js/uikit.min.js"></script>
+    <script src="vendors/js/uikit-icons.min.js"></script>
+    <script src="vendors/js/jquery.scrollify.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/jquery.counterup.min.js"></script>
+    <script src="resources/js/index.js"></script>
+</body>
+</html>

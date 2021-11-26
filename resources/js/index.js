@@ -1,0 +1,3 @@
+$(document).ready(function(){$('.counter').counterUp({delay:10,time:1000})});$(function(){$.scrollify({section:".scrolly",setHeights:!1,updateHash:!1,})});$(function(){$('.main-nav a, .hero-tex-box a, .mobile-menu a ').on('click',function(){$('html, body').animate({scrollTop:$($.attr(this,'href')).offset().top},1000);return!1})})
+function openNav(){document.getElementById("myNab").style.width="100%"}
+function closeNav(){document.getElementById("myNab").style.width="0%"}
